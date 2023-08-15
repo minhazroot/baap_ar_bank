@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- telweel css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-6xl text-center text-orange-300">WELCOME MY <span class="text-red-700 mt-5">BANK !!</span></h1>
+    <main>
+        <section class="flex  justify-around items-center mt-20">
+            <div class="bg-green-600 h-[100px] w-[300px] p-5 rounded-2xl ">
+                <h3 class="text-3xl">Deposit </h3>
+                <h2>$ <span id="deposit_desplay"></span></h2>
+            </div>
+            <div class="bg-orange-200 h-[100px] w-[300px] p-5 rounded-2xl">
+                <h3 class="text-3xl">Withdraw </h3>
+                <h2>$ <span id="Withdraw_desplay"></span></h2>
+            </div>
+            <div class="bg-pink-500 h-[100px] w-[300px] p-5 rounded-2xl">
+                <h3 class="text-3xl">Balance </h3>
+                <h2>$ <span id="Balance_desplay">1200</span></h2>
+            </div>
+        </section>
+        <section class="flex justify-around">
+            <div class=" bg-lime-400 h-[200px] w-[400px] p-5 mt-[100px] rounded-2xl ">
+                <h4 class="text-4xl text-indigo-500 mb-4">deposit your money</h4>
+                <input id="deposit_fielt" class="w-[350px] h-10 rounded-xl" type="text" placeholder="deposit amount">
+                <button class="bg-orange-300 p-4 rounded-xl mt-5 font-semibold" id="deposit_btn">DEPOSIT</button>
+            </div>
+            <div class=" bg-gray-400 h-[200px] w-[400px] p-5 mt-[100px] rounded-2xl ">
+                <h4 class="text-4xl text-indigo-500 mb-4">Withdraw your money</h4>
+                <input id="Withdraw_fielt" class="w-[350px] h-10 rounded-xl" type="text" placeholder="Withdraw amount">
+                <button class="bg-orange-300 p-4 rounded-xl mt-5 font-semibold" id="Withdraw_btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="./myBank.js"></script>
+</body>
+
+</html>
